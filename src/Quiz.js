@@ -2,7 +2,7 @@ import React from "react";
 import { useParams } from "react-router-dom";
 import NavBar from "./NavBar";
 import { LanguageOneTxt } from "./Cards";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
 const Quiz = () => {
@@ -10,13 +10,24 @@ const Quiz = () => {
   let obj = JSON.parse(localStorage.getItem(id));
 
   const title = obj.title;
-  const dict = obj.dict;
 
-  var dictIsValid = true;
-  if (dict.length < 4) {
-    dictIsValid = false;
-  }
-  console.log(id);
+  const [dict, setDict] = useState(null);
+  const [baseURL, setBaseURL] = useState(null);
+
+  useEffect(() => {
+    fetch(obj.listURL)
+      .then((res) => {
+        return res.json();
+      })
+      .then((data) => {
+        console.log(data);
+        console.log(data.title);
+        setDict(data.dict);
+        setBaseURL(data.baseURL);
+      });
+  }, []);
+
+  console.log(dict);
 
   return (
     <>
@@ -27,14 +38,17 @@ const Quiz = () => {
         L_link="/"
         R_link={"/practisecards/" + id}
       />
-      {dictIsValid && <QuizWidget dict={dict} />}
-      {!dictIsValid && <InvalidDictWidget id={id} />}
+
+      {dict && <QuizWidget dict={dict} baseURL={baseURL} />}
     </>
   );
 };
 
-export const QuizWidget = ({ dict }) => {
+export const QuizWidget = ({ dict, baseURL }) => {
   const [recentWordsID, setRecentWordsID] = useState([]);
+
+  console.warn(dict);
+  console.warn(baseURL);
 
   const [styleOne, setStyleOne] = useState("");
   const [styleTwo, setStyleTwo] = useState("");
@@ -43,7 +57,7 @@ export const QuizWidget = ({ dict }) => {
 
   const [started, setStarted] = useState(false);
 
-  const [title, settitle] = useState("title");
+  const [srcURL, setSrcURL] = useState("/0.png");
   const [answers, setAnswers] = useState([]);
   const [correctID, setCorrectID] = useState(99);
 
@@ -84,7 +98,7 @@ export const QuizWidget = ({ dict }) => {
     return number;
   }
 
-  function getAnswers(currentID, answerLanguage) {
+  function getAnswers(currentID) {
     let answers = [];
     // Generate random answerIDs
     let wrong_answersID = [];
@@ -96,26 +110,20 @@ export const QuizWidget = ({ dict }) => {
     }
 
     // Use IDs to create verbal answers
-    let title = "";
+    let srcURLL = "";
     let correctID = Math.round(Math.random() * 3);
     setCorrectID(correctID);
-    if (answerLanguage == "CZ") {
-      for (let id = 0; id < wrong_answersID.length; id++) {
-        answers.push(dict[wrong_answersID[id]].WordCzech);
-      }
 
-      answers.splice(correctID, 0, dict[currentID].WordCzech);
-      title = dict[currentID].WordOther;
-    } else {
-      for (let id = 0; id < wrong_answersID.length; id++) {
-        answers.push(dict[wrong_answersID[id]].WordOther);
-      }
-      title = dict[currentID].WordCzech;
-      answers.splice(correctID, 0, dict[currentID].WordOther);
+    for (let id = 0; id < wrong_answersID.length; id++) {
+      answers.push(dict[wrong_answersID[id]].title);
     }
+
+    answers.splice(correctID, 0, dict[currentID].title);
+    srcURLL = dict[currentID].src;
+
     setAnswers(answers);
-    settitle(title);
-    return { answers: answers, correctID: correctID, title: title };
+    setSrcURL(srcURLL);
+    return { answers: answers, correctID: correctID, srcURL: srcURLL };
   }
 
   function revealCorrectAnswer(index) {
@@ -184,7 +192,11 @@ export const QuizWidget = ({ dict }) => {
 
   return (
     <div className="content content-padding">
-      <LanguageOneTxt title={title} />
+      <div className="lesson-card-one-item uvnitr-obrazek   center bg-green">
+        <img  src={"" + baseURL + srcURL} alt="obrazek nebo tak něco "  className="omezeni-obrazkuuu" />
+
+      </div>
+
 
       <div className="translate-choices">
         <div
