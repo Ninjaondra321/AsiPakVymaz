@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.css": "/ProBiology/static/css/main.166aff7a.css",
+    "main.js": "/ProBiology/static/js/main.328a53f9.js",
+    "static/js/787.36df32cd.chunk.js": "/ProBiology/static/js/787.36df32cd.chunk.js",
+    "service-worker.js": "/ProBiology/service-worker.js",
+    "static/media/settings.svg": "/ProBiology/static/media/settings.e6836d371f00596f6b4f.svg",
+    "static/media/running.svg": "/ProBiology/static/media/running.9334d899e74b30846f31.svg",
+    "static/media/sun.svg": "/ProBiology/static/media/sun.299d62da9c3137184955.svg",
+    "index.html": "/ProBiology/index.html",
+    "static/media/copy.svg": "/ProBiology/static/media/copy.f9e3d741ee9b94a5be4d.svg",
+    "static/media/home.svg": "/ProBiology/static/media/home.c289304918873424026a.svg",
+    "static/media/rubberduck.svg": "/ProBiology/static/media/rubberduck.52ee07331b49284ab6df.svg",
+    "static/media/trash.svg": "/ProBiology/static/media/trash.226ded8365259ff326f5.svg",
+    "static/media/arrow-simple-right.svg": "/ProBiology/static/media/arrow-simple-right.126206abfc84046b1bab.svg",
+    "static/media/arrow-simple-left.svg": "/ProBiology/static/media/arrow-simple-left.370970c5f0ab23096fe3.svg",
+    "static/media/menu.svg": "/ProBiology/static/media/menu.e1749c393a0cd889797c.svg",
+    "static/media/play.svg": "/ProBiology/static/media/play.e2335f01cb103b7a1f79.svg",
+    "static/media/form.svg": "/ProBiology/static/media/form.e232a3f74c2a6235f79f.svg",
+    "static/media/plus.svg": "/ProBiology/static/media/plus.efc9df0a0a206dc15b8a.svg",
+    "static/media/turn-card.svg": "/ProBiology/static/media/turn-card.9e48b028e3886230bf8f.svg",
+    "static/media/ok.svg": "/ProBiology/static/media/ok.2fde71942af9a8018ede.svg",
+    "static/media/storage.svg": "/ProBiology/static/media/storage.bad6b8a6eb5cc964c01c.svg",
+    "static/media/map-pin.svg": "/ProBiology/static/media/map-pin.ffc84a3b0df992c0909a.svg",
+    "static/media/card.svg": "/ProBiology/static/media/card.32be89c7562ee2dc4f15.svg",
+    "static/media/three-dots.svg": "/ProBiology/static/media/three-dots.8f4bcbbb25ef94a1ad99.svg",
+    "static/media/magnifiingglass.svg": "/ProBiology/static/media/magnifiingglass.a5235f87aae5de581aa0.svg",
+    "main.166aff7a.css.map": "/ProBiology/static/css/main.166aff7a.css.map",
+    "main.328a53f9.js.map": "/ProBiology/static/js/main.328a53f9.js.map",
+    "787.36df32cd.chunk.js.map": "/ProBiology/static/js/787.36df32cd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.166aff7a.css",
+    "static/js/main.328a53f9.js"
+  ]
+}
