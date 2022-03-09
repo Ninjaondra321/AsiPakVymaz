@@ -1,0 +1,371 @@
+/*Docasne*/
+
+:root {
+    --color01: #33ff00;
+    --color02: #ebff00;
+  }
+  
+  .dark-theme {
+    color: rgb(255, 255, 255) !important;
+  }
+  
+  .light-theme {
+    color: rgb(0, 0, 0) !important;
+  }
+  
+  /* GRADIENT UI*/
+  .gradient-style.dark-theme .PractiseCard,
+  .gradient-style.dark-theme .choice-card,
+  .gradient-style.dark-theme .lesson-card-one-item,
+  .gradient-style.dark-theme .lesson-card {
+    border-bottom: double 2px transparent;
+    background-image: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0)),
+      linear-gradient(to right, var(--color01), var(--color02));
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+  }
+  
+  .gradient-style.light-theme .PractiseCard,
+  .gradient-style.light-theme .choice-card,
+  .gradient-style.light-theme .lesson-card-one-item,
+  .gradient-style.light-theme .lesson-card {
+    border-bottom: double 4px transparent;
+    background-image: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255)),
+      linear-gradient(to right, var(--color01), var(--color02));
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+  }
+  
+  .gradient-style .PractiseCard {
+    border-width: 2px !important;
+    border-right: 2px transparent;
+    border-top: 2px transparent;
+    border-left: 2px transparent;
+    padding: 2px;
+    border-radius: 15px;
+  }
+  .aurora-style .PractiseCard {
+    border-radius: 30px;
+  }
+
+  .aurora-style .PractiseCard .card-subtitle {
+    padding-bottom: 15px;
+  }
+
+  .aurora-style .PractiseCard .card-title {
+    padding-top: 20px;
+  }
+
+  .gradient-style .i-play-bg {
+    background-image: linear-gradient(
+        to right top,
+        var(--color01),
+        var(--color02)
+      ),
+      linear-gradient(to right bottom, var(--color01), var(--color02));
+
+  }
+  
+  
+  .gradient-style.dark-theme .translate-card {
+    border: double 3px transparent;
+    background-image: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0)),
+      linear-gradient(to right, var(--color01), var(--color02));
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+  }
+  
+  
+  .gradient-style.light-theme .translate-card {
+    border: double 3px transparent;
+    background-image: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255)),
+      linear-gradient(to right, var(--color01), var(--color02));
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+  }
+  
+  .gradient-style .lesson-card,
+  .gradient-style .lesson-card-one-item {
+    box-shadow: 0px 0px 5px 1px rgba(104, 104, 104, 0.555);
+    border-radius: 5px !important;
+  }
+  
+  .gradient-style .choice-card .marker {
+    background-image: linear-gradient(var(--color01), var(--color02)),
+      linear-gradient(to right, var(--color01), var(--color02));
+  }
+  
+  .gradient-style h1 {
+    background: linear-gradient(to right bottom, var(--color01), var(--color02));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  /* AURORA UI */
+  
+  .aurora-style body{
+    background-color: rgb(152, 152, 201);
+  }
+  
+  .aurora-style.light-theme .filter {
+    background-color: aliceblue;
+  }
+  
+  .aurora-style.dark-theme  .PractiseCard,
+  .aurora-style.dark-theme .choice-card,
+  .aurora-style.dark-theme .lesson-card-one-item,
+  .aurora-style.dark-theme .lesson-card {
+    background-color: black;
+  }
+  .aurora-style.light-theme .PractiseCard,
+  .aurora-style.light-theme .choice-card,
+  .aurora-style.light-theme .lesson-card-one-item,
+  .aurora-style.light-theme .lesson-card {
+    background-color: aliceblue !important;
+  }
+  
+  .aurora-style.light-theme .choice-card .marker {
+    background-color: black;
+    color: aliceblue;
+  }
+  
+  .aurora-style.dark-theme .choice-card .marker {
+    background-color: aliceblue;
+    color: black;
+  }
+  
+  .i-play-bg {
+    height: 75px;
+    width: 75px;
+    transform: translate(calc(100vw - 130px), -75px);
+    border-radius: 50px;
+  }
+  .aurora-style.light-theme .i-play-bg {
+    background-color: black;
+  }
+  
+  .aurora-style.dark-theme .i-play-bg {
+    background-color: aliceblue;
+
+  }
+
+ .dark-theme .i-play {
+    filter: invert(0) !important;
+  }
+
+ .light-theme .i-play {
+    filter: invert(1) !important;
+  }
+  
+ .choice-card.correct {
+    color: rgb(37, 219, 0);
+  }
+
+  
+ .choice-card.wrong {
+    color: rgb(219, 0, 0);
+  }
+
+  
+
+  .dark-theme .lesson-card-one-item input {
+    color: white;
+    border-color: white;
+  }
+
+
+
+  .aurora-style.dark-theme .filter  input:checked ,
+  .aurora-style.light-theme .language-selection input:checked {
+    background-color: white;
+    color: black;  
+  }
+
+  .aurora-style.dark-theme .language-selection input:checked {
+    background-color: black;
+    color: white;
+  }
+
+  
+  
+  .aurora-style.light-theme .filter  input:checked {
+    background-color: black !important;
+    color: white !important;
+  }
+
+  .aurora-style.dark-theme .filter  input:checked {
+    background-color: white !important;
+    color: black !important; 
+  }
+
+
+  .aurora-style.dark-theme .filter {
+    background-color: black;
+  }
+
+  
+  .language-selection input {
+    padding-left: 4px;
+    padding-right: 4px;
+    border-radius: 5px;
+  }
+
+
+      .l-button, 
+     .large-button {
+       padding-top: 10px;
+       padding-bottom: 10px;      
+      }
+
+    button {
+      border-radius: 4px;
+      padding-top: 4px;
+      padding-bottom: 4px;      
+      border: none;
+    }  
+    
+    .dark-theme button {
+      color: white;
+      background-color: black;
+    }
+
+    .light-theme button {
+      background-color: white;
+      color: black;
+    }
+
+  
+
+
+  body {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: stretch;
+    background-size: cover;
+  }
+
+  .pakVymazClassName {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+
+
+
+  .PractiseCard {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  .PractiseCard .card-title {
+    font-size: 40px;
+  }
+
+  .PractiseCard .card-subtitle {
+    font-size: 30px;
+  } 
+   .PractiseCard .card-subtitle.hidden {
+    color: rgba(0, 0, 0, 0);
+  }
+
+
+  .EditTranslateCard {
+    width: 100%;
+  }
+
+
+
+  .EditTranslateCard :nth-child(1) {
+    width: calc(37vw - 10px);
+  }
+
+  .EditTranslateCard :nth-child(2) {
+    width: calc(37vw - 10px);
+  }
+
+
+  .EditTranslateCard :nth-child(3) {
+    max-width: calc(15vw - 10px) !important;
+    background-color: rgba(0, 0, 0, 0) ;
+  }
+
+
+  .light-theme .EditTranslateCard-main :nth-child(3){
+    background-color: white;
+  }
+  .dark-theme .EditTranslateCard-main :nth-child(3){
+    background-color: black;
+  }
+
+  .EditTranslateCard-main {
+    padding-bottom: 25px;
+  }
+
+.filter .center input[type="text"] {
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  border-bottom: grey 1px solid;
+}
+
+.filter {
+  padding-top: 10px
+}
+
+
+.gradient-style.dark-theme .language-selection input {
+  color:white
+}
+
+.language-selection {
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+
+.gradient-style.dark-theme button {
+  color: black !important;
+  background-color: white !important 
+}
+
+.one-line-button-padding {
+  margin-top: 10px;
+}
+
+.no-padding-top {
+  padding-top: 0;
+  margin-top: 0;
+}
+
+
+.gradient-style .choice-card .marker {
+  color: black;
+}
+
+
+.dark-theme input[type="text"] {
+  background-color: black;
+  color: white;
+  border: none;
+  border-bottom: white solid 1px;
+  border-radius: 3px;
+  height: 25px;
+  margin-right: 2px;
+}
+
+.lesson-card-one-item input {
+  height: 45px !important; 
+}
+
+.gradient-style.dark-theme input[type="radio"]:checked {
+  color: black !important;
+  background-color: white !important;
+}
+
+.gradient-style.light-theme input[type="radio"]:checked {
+  color: white !important;
+  background-color: black !important;
+}
+
+
+/*--- REFORMACE STYLŮ ---- */
+

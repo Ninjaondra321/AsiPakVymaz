@@ -1,0 +1,132 @@
+.icon {
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 40px;
+    width: 40px;
+  }
+  
+  .dark-theme .icon {
+    filter: invert(1);
+  }
+
+
+  .dark-theme .icon-switched-color {
+    filter: invert(0) !important;
+  }
+  
+  .dark-light .icon-switched-color {
+    filter: invert(1) !important;
+  }
+  
+  .icon-large {
+    height: 90px;
+    width: 90px;
+  }
+  
+  .icon-medium {
+    height: 75px;
+    width: 75px;
+  }
+
+  .small-icon, 
+  .icon-small {
+    width: 25px;
+    height: 25px;
+  }
+  
+  .i-sun {
+    background-image: url(imgs/sun.svg);
+  }
+  
+  .i-running {
+    background-image: url(imgs/running.svg);
+  }
+  
+  .i-menu {
+    background-image: url(imgs/menu.svg);
+  }
+  
+  .i-rubberduck {
+    background-image: url(imgs/rubberduck.svg);
+  }
+  
+  .i-magnifiingglass {
+    background-image: url(imgs/magnifiingglass.svg);
+  }
+  
+  .small-icon {
+    height: 25px !important;
+    width: 25px !important ;
+  }
+  
+  .i-arrow-simple-right {
+    background-image: url(imgs/arrow-simple-right.svg);
+  }
+  
+  .i-settings {
+    background-image: url(imgs/settings.svg);
+  }
+
+  .i-card {
+    background-image: url(imgs/card.svg);
+  }
+
+
+  .i-form {
+    background-image: url(imgs/form.svg);
+  }
+
+  .i-copy {
+    background-image: url(imgs/copy.svg);
+  }
+
+  .i-map-pin {
+    background-image: url(imgs/map-pin.svg);
+  }
+
+
+  .i-ok {
+    background-image: url(imgs/ok.svg);
+  }
+
+  .i-play {
+    background-image: url(imgs/play.svg);
+  }
+
+
+  .i-plus {
+    background-image: url(imgs/plus.svg);
+  }
+
+  .i-storage {
+    background-image: url(imgs/storage.svg);
+  }
+
+  .i-three-dots {
+    background-image: url(imgs/three-dots.svg);
+  }
+
+  canvas {
+    border: 1px solid black;
+  }
+
+
+  .i-home {
+    background-image: url(imgs/home.svg);
+  }
+
+
+  .i-arrow-simple-left {
+    background-image: url(imgs/arrow-simple-left.svg);
+  }
+
+
+
+  .i-turn-card {
+    background-image: url(imgs/turn-card.svg);
+  }
+
+  .i-trash {
+    background-image: url(imgs/trash.svg);
+
+  }
