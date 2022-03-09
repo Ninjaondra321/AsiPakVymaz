@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/ProBiology/static/css/main.166aff7a.css",
-    "main.js": "/ProBiology/static/js/main.328a53f9.js",
+    "main.js": "/ProBiology/static/js/main.265306f7.js",
     "static/js/787.36df32cd.chunk.js": "/ProBiology/static/js/787.36df32cd.chunk.js",
     "service-worker.js": "/ProBiology/service-worker.js",
     "static/media/settings.svg": "/ProBiology/static/media/settings.e6836d371f00596f6b4f.svg",
@@ -26,11 +26,11 @@
     "static/media/three-dots.svg": "/ProBiology/static/media/three-dots.8f4bcbbb25ef94a1ad99.svg",
     "static/media/magnifiingglass.svg": "/ProBiology/static/media/magnifiingglass.a5235f87aae5de581aa0.svg",
     "main.166aff7a.css.map": "/ProBiology/static/css/main.166aff7a.css.map",
-    "main.328a53f9.js.map": "/ProBiology/static/js/main.328a53f9.js.map",
+    "main.265306f7.js.map": "/ProBiology/static/js/main.265306f7.js.map",
     "787.36df32cd.chunk.js.map": "/ProBiology/static/js/787.36df32cd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.166aff7a.css",
-    "static/js/main.328a53f9.js"
+    "static/js/main.265306f7.js"
   ]
 }
